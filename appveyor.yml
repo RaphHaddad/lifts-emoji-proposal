@@ -5,5 +5,13 @@ install:
   - cmd:  refreshenv
 
 build_script:
-  - cmd: pdflatex deadlift.tex
-# build: off
+  - cmd: pdflatex .\deadlift.tex -output-directory=output
+  - path: output
+
+artifacts:
+  - path: output\*.pdf
+
+- provider: GitHub
+  artifact: output\*.pdf
+  on:
+    branch: master
