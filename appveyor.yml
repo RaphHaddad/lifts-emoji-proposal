@@ -11,7 +11,8 @@ build_script:
 artifacts:
   - path: output\*.pdf
 
-- provider: GitHub
-  artifact: output\*.pdf
-  on:
-    branch: master
+deploy:
+  - provider: GitHub
+    artifact: output\*.pdf
+    on:
+      branch: master
