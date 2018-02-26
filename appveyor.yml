@@ -6,7 +6,6 @@ install:
 
 build_script:
   - cmd: pdflatex .\deadlift.tex -output-directory=output
-  - path: output
 
 artifacts:
   - path: output\*.pdf
