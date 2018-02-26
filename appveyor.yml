@@ -13,7 +13,6 @@ artifacts:
 
 deploy:
   - provider: GitHub
-    artifact: output\*.pdf
     auth_token:
       secure: mMNcgeTi41EZWbRLDjwzsR2kcbIxUNFI9wNoN+70bw2QPO0fYj6gHj7VK4rPNnXM
     on:
