@@ -5,4 +5,4 @@ install:
 
 build_script:
   - ps: pdflatex deadlift.tex
-build: off
+# build: off
